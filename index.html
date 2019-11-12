@@ -152,6 +152,69 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="w-转发和重定向" class="article article-type-w  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/12/转发和重定向/">转发和重定向</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/12/转发和重定向/" class="archive-article-date">
+  	<time datetime="2019-11-12T07:25:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>重定向的特点：<br>1.重定向是客户端行为。（浏览器重新请求）<br>2.重定向是浏览器做了至少两次的访问请求的（也可以重定向多次）<br>3.定向浏览器地址改变<br>4.重定向两次跳转之间传输的信息会丢失（request范围）<br>5.重定向可以指向任何的资源，包括当前应用程序中的其他资源，同一个站点上的其他应用程序中的资源，其他站点的资源（如自己工程重定向到百度）。<br>传递给HttpServletResponse.sendRedirect方法的相对URL以”/“开头，他是相对于整个WEB站点的根目录。<br>涉及的关键代码：response.sendRedirect(“regist.jsp”);<br>转发的特点：<br>1.转发是服务器行为。（不经过浏览器）<br>2.转发是浏览器只做了一次访问请求。<br>3.转发浏览器地址不变<br>4.转发两次跳转之间传输的信息不会丢失，所以可以通过request进行数据的传输<br>5.转发只能将请求转发给同一个WEB应用中的组件<br>如果创建RequestDispstcher对象时指定的相对URL以”/“开头，他是相对于当前WEB应用程序的根目录。（只能是本工程下的，因为是服务器行为）<br>涉及的关键代码：request.getRequestDispstcher(“regist.jsp”).forward(request,response);</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/12/转发和重定向/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="w-Cookie-Session" class="article article-type-w  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
